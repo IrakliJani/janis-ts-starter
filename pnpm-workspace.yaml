@@ -1,0 +1,24 @@
+packages:
+  - "packages/*"
+
+saveExact: true
+savePrefix: ""
+saveWorkspaceProtocol: true
+
+hoist: false
+hoistWorkspacePackages: false
+hoistPattern: []
+
+resolvePeersFromWorkspaceRoot: false
+autoInstallPeers: false
+strictPeerDependencies: true
+
+engineStrict: true
+pmOnFail: error
+verifyDepsBeforeRun: error
+
+minimumReleaseAge: 4320
+minimumReleaseAgeIgnoreMissingTime: false
+trustPolicy: no-downgrade
+
+ignoreScripts: true

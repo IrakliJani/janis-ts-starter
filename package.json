@@ -1,0 +1,27 @@
+{
+  "name": "janis-ts-starter",
+  "version": "0.0.0",
+  "description": "Jani's TS Starter",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "typecheck": "tsgo --noEmit",
+    "lint": "oxlint --type-aware --fix --deny-warnings src",
+    "lint:check": "oxlint --type-aware --deny-warnings src",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "check": "oxlint --type-aware --deny-warnings src && tsgo --noEmit && oxfmt --check ."
+  },
+  "devDependencies": {
+    "@typescript/native-preview": "7.0.0-dev.20260601.1",
+    "oxfmt": "0.53.0",
+    "oxlint": "1.68.0",
+    "oxlint-tsgolint": "0.23.0"
+  },
+  "engines": {
+    "node": ">=24.15.0",
+    "pnpm": ">=11 <12"
+  },
+  "packageManager": "pnpm@11.5.2"
+}
